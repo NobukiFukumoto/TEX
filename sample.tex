@@ -1,0 +1,93 @@
+\documentclass{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+
+\title{うれし はずかし 初めての\LaTeX}
+\author{山田太郎\\ 学籍番号: 6300000}
+
+\begin{document}
+\maketitle
+Hello!!
+私は, \LaTeX には慣れていますが,
+\LaTeXe は初心者です.
+
+\section{セクション付け}
+こうやるとセクションがつけられるのだぁ。
+\subsection{副飾}
+副飾も付けられるのだぁ
+\subsection{副飾もう一度}
+ほら、もう一度も。
+
+\section{箇条書き}
+\begin{itemize}
+\item FORTRAN
+\item C
+\item PASCAL
+\end{itemize}
+\begin{enumerate}
+\item ターミネーター・ジェネシス
+\begin{enumerate}
+\item サラコナーがいい感じ
+\item シュワは歳とったなぁ
+\end{enumerate}
+\item バケモノの子
+\end{enumerate}
+
+\section{表}
+\begin{table}
+\caption{めくるめくスイーツ}
+\begin{center}
+\begin{tabular}{||l|cr||} \hline
+バナナケース & ピース & 350 \\ \cline{2-3}
+& ホール & 2800 \\ \hline
+プリン & 1個 & 250 \\ \cline{1-1} \cline{3-3}
+トリュフ & & 100 \\ \hline
+アイス & カップ & 200 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{数式と記号}
+どんな感じかな？ $a_{2} > x^{2n}/y^{2n}$ になった．
+\[
+x^{y}_{1}, x^{y_2}, x^{y^3}
+\]
+
+\[
+x = \frac{x+y}{1+\frac{y}{z+1}}
+\]
+
+$ \sqrt{x+y} $ と$ \root n \of 2$
+\[ \sum_{x=0}^n x \]
+\[ \int_{x=0}^n x \]
+
+\[
+\left(
+\begin{array}{lcr}
+a+b+c & UV & 27 \\
+a+b & U+V & 134 \\
+a & 3U+V & 1234
+\end{array}
+\right)
+\]
+
+\[
+x = \left\{
+\begin{array}{ll}
+y & \mbox{if $y>0$} \\
+z+y & \mbox{otherwise}
+\end{array}
+\right.
+\]
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[bb=0 0 300 150, width=5cm]{google.png}
+\end{center}
+\caption{aaaaa}
+\label{hoge}
+\end{figure}
+
+おぉ、図\ref{hoge} だぁ。
+
+
+\end{document}
